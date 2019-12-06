@@ -73,6 +73,6 @@ public class HitUrlTest {
 			Xlfile_Reader.setCellData1((timeElapsed.toMillis()) / 1000, i, 2);
 			
 		}
-                        driver.close();
+                        
 	}
 }
