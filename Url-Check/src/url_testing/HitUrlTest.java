@@ -66,7 +66,6 @@ public class HitUrlTest {
 				System.out.println("Number of hits :-" + j);
 
 			}
-			Xlfile_Reader.setCellData(j, i, 1);
 			Instant end = Instant.now();
 			Duration timeElapsed = Duration.between(start, end);
 			System.out.println("Time taken: " + (timeElapsed.toMillis()) / 1000 + " seconds");
