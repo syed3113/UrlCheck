@@ -1,0 +1,396 @@
+#Home Page
+closebtn=//*[@id="close-button"]
+priceslider=//*[@class='noUi-base']
+pricetxtbox1=(//*[@id="mobile" and @type="text" ])[1]                    
+pricetxtbox2=//*[@id="mobile" and contains(@class,'input_2')] 
+findbtn=//*[contains(@class,'find_mob mini_finder_btn')]
+pricearound=//*[contains(@data-href-url,'mss-4428')]
+bybrand=//*[contains(@onclick,'By Brand') and contains(@data-href-url,'mobile-price-list-in-india')]
+byfeatures=(//*[contains(@onclick,'ram') ])
+rightwidgetheading1=//*[@id="fifth-carousel-popular_search"]/li[1]/div[1]/a
+rightwidgetheading2=//*[@id="fifth-carousel-popular_search"]/li[2]/div[1]/a
+rightwidgetheading3=//*[@id="fifth-carousel-popular_search"]/li[3]/div[1]/a
+rightwidgetheading4=//*[@id="fifth-carousel-popular_search"]/li[4]/div[1]/a
+rightwidgetheading5=//*[@id="fifth-carousel-popular_search"]/li[5]/div[1]/a
+rightwidgetheading6=//*[@id="fifth-carousel-popular_search"]/li[6]/div[1]/a
+rightwidgetheading7=//*[@id="fifth-carousel-popular_search"]/li[7]/div[1]/a
+rightwidgetheading8=//*[@id="fifth-carousel-popular_search"]/li[8]/div[1]/a
+rightwidgetheading9=//*[@id="fifth-carousel-popular_search"]/li[9]/div[1]/a
+rightwidgetheading10=//*[@id="fifth-carousel-popular_search"]/li[10]/div[1]/a
+rightsidewidgetbrand1=//*[@class='right_pnl_pro_title']
+rightsidewidgetbrand2=(//*[@class='right_pnl_pro_title'])[4]
+rightsidewidgetbrand3=/html/body/div[6]/div/div/div[1]/div[4]/div/div[1]/ul/li[3]/ul/li[1]/span/a
+rightsidewidgetspecscore=(//*[contains(@class,'rating_box_right_new ')])[1]
+rightsidewidgetspecscore2=(//*[contains(@class,'rating_box_right_new ')])[4]
+rightsidewidgetspecscore3=(//*[contains(@class,'rating_box_right_new ')])[7]
+rightsidewidgetprice=(//*[@class='price'])[1]
+rightsidewidgetprice2=(//*[@class='price'])[4]
+rightsidewidgetprice3=(//*[@class='price'])[7]
+rightsidewidgetimage=(//img[contains(@src,'small-1')])[1]
+rightsidewidgetslider1=/html/body/div[6]/div/div/div[1]/div[4]/div/div[3]
+rightsidewidgetslider2=/html/body/div[6]/div/div/div[1]/div[4]/div/div[3]
+rightsidewidgetslider3=/html/body/div[6]/div/div/div[1]/div[4]/div/div[3]
+rightsidewidgettxt1=//*[text()='Android Pie Phones']
+rightsidewidgettxt2=//*[text()='Phones with fingerprint scanner']
+recentlyvieweddetailsbtn=(//*[contains(@onclick,'recently-viewed') and contains(@class,'gray_btn')] )[1]
+recentlyviewedbrandtxt=(//*[contains(@onclick,'recently-viewed:title')])[1]
+recentlyviewedspecsscore=(//*[starts-with(@class,'rating_box_new_list ') and contains(@onclick,'recently-viewed')])[1]
+recentlyviewedprice=(//*[@class='pro_price'])[1]
+recentlyviewedslider=//*[@id="recentViewedBox"]/div/div[3]/div/div[3]
+latestnews=//*[@id="fifth-carousel-latest_news"]/li[1]
+latestnewstxt=//*[@id="fifth-carousel-latest_news"]/li[1]/a/div[2]/span[1]
+latestnewsreadmorebtn=//*[text()='Read more']
+latestnewsforwardslider=//*[@id="english_news"]/div[2]/div[3]
+latestnewsbackwardslider=//*[@id="english_news"]/div[2]/div[2]
+storiesthatmatterreadmorelink=(//*[text()=' Read More'])[1]
+storiesthatmatterreviewbtn=//*[contains(@onclick,'expert-review')]
+storiesthatmattertxt=//*[@id="fifth-carousel-top_review"]/li[1]/span/div[2]/span[1]
+storiesthatmatterreviewtxt=(//*[@id="fifth-carousel-top_review"]/li[1]/span/div[2]/span[1])[2]
+storiesthatmatterforwardslider=//*[@id="review_all"]/div[2]/div[3]
+storiesthatmatterbackwardslider=//*[@id="review_all"]/div[2]/div[2]
+samacharreadmorelink=//*[contains(@onclick,'hindi-news') and contains(@onclick,'read-more')]
+samachartxt=//*[@id="fifth-carousel-hindi-post"]/li[1]/span/div[2]/span[1]
+samacharforwardslider=//*[@id="hindi_news"]/div/div[3]/div/div[3]
+samacharbackwardslider=//*[@id="hindi_news"]/div/div[3]/div/div
+upcomingmobileslink=//*[contains(@onclick,'upcoming-mobiles')and contains(@class,'view_all')]
+upcomingmobilesbrandtxt=(//*[contains(@onclick,'upcoming-mobile:title')])[1]
+upcomingmobilesspecscore=(//*[contains(@title,'91score') and contains(@onclick,'upcoming-mobile')])[1]
+upcomingmobilesprice=(//*[@class="pro_price"])[1]
+upcomingmobilesviewdetailsbtn=(//*[contains(@class,'gray_btn') and contains(text(),'View Details')])[1]
+upcomingmobilesforwardslider=//*[@id="upcoming_mobile"]/div[2]/div[3]
+upcomingmobilesbackwardslider=//*[@id="upcoming_mobile"]/div[2]/div[2]
+latestmobileslink=//*[contains(@onclick,'featured-mobiles') and contains(@onclick,'view-all')]
+latestmobilesspecscore=(//*[contains(@class,'rating_box_new_list') and contains(@onclick,'featured-mobile') ])[1]
+latestmobilesbrandtxt=(//*[contains(@onclick,'featured-mobile:title') ])[1]
+latestmobilesprice=(//*[@class="pro_price"])[38]
+latestmobilesviewdetailsbtn=(//*[contains(@onclick,'featured-mobile:viewDetail')])[1]
+latestmobilesforwardslider=//*[@id="featured_mobile"]/div[2]/div[3]
+latestmobilesbackwardslider=//*[@id="featured_mobile"]/div[2]/div[2]
+featuredmobilebrandsname=(//*[contains(@onclick,'popular-brands-mobiles:title')])[1]
+featuredmobilebrandsviewallbtn=(//*[contains(@onclick,'popular-brands-mobiles:viewDetail')])[1]
+featuredmobileforwardslider=//*[@id="popular_brands_mobile"]/div[2]/div[3]
+featuredmobilebackwardslider=//*[@id="popular_brands_mobile"]/div[2]/div[2]
+bestphonesbypricelink=((//*[contains(@alt,'Best Phones Under ')]))[1]
+bestphonesbypriceforwardslider=/html/body/div[6]/div/div/div[4]/div[8]/div[3]/div[1]/div[3]
+bestphonesbypricebackwardslider=/html/body/div[6]/div/div/div[4]/div[8]/div[3]/div[1]/div[2]
+trendingcollectionsbestphones=//*[@id="fifth-carousel-expert_picks"]/li[1]/a/div/div[1]/img
+trendingcollectionsforwardslider=//*[@id="collectionWidget"]/div/div[3]/div[1]/div[3]
+trendingcollectionsbackwardslider=//*[@id="collectionWidget"]/div/div[3]/div[1]/div[2]
+topdealsviewalllink=//*[contains(@onclick,'deals-all') and contains(@onclick,'view-all')]
+topdealsmobileviewall=//*[@id="popular_deals_mobile"]/div[1]/span
+topdealsbrandname=//*[@id="fifth-carousel-best_deals"]/li[1]/span/div[2]/div[1]
+#topdealsbrandname=//*[@id="fifth-carousel-best_deals"]/li[2]/span/div[2]/div[1]
+topdealsprice=//*[@id="fifth-carousel-best_deals"]/li[1]/span/div[2]/span
+#//*[@id="fifth-carousel-best_deals"]/li[1]/span/div[2]/span
+topdealsoff =//*[@id="fifth-carousel-best_deals"]/li[1]/span/div[2]/div[2]/span
+topdealslike=(//*[@class="hm_deal_lyk"])[1]
+topdealsstore=(//*[@class='hm_deal_str'])[1]
+topdealsmobilebtn=//*[contains(@onclick,'popular-deals-mobiles')]
+topdealsforwardslider=//*[@id="popular_deals_all"]/div[2]/div[3]
+topdealsbackwardslider=//*[@id="popular_deals_all"]/div[2]/div[2]
+featuredmobilecomparisonsmorelink=//*[text()='Compare More']
+featuredmobilecomparisionsspecscore1=(//*[contains(@onclick,'featured-comparison-mobile') and contains(@title,'91score')])[1]
+featuredmobilecomparisionsspecscore2=(//*[contains(@onclick,'featured-comparison-mobile') and contains(@title,'91score')])[2]
+featuredmobilecomparisionsbrandname1=(//*[contains(@onclick,'featured-comparison-mobile:title')])[1]
+featuredmobilecomparisionsbrandname2=(//*[contains(@onclick,'featured-comparison-mobile:title')])[2]
+featuredmobilecomparisionsprice1=//*[@id="fifth-carousel-featured_compare_product"]/li[1]/div[1]/span/div[2]/div[2]
+featuredmobilecomparisionsprice2=//*[@id="fifth-carousel-featured_compare_product"]/li[1]/div[3]/div[2]/div[2]
+featuredmobilecomparisionscomparebtn=(//*[contains(@onclick,'featured-comparison-mobile') and contains(text(),'Compare' )])[2]
+featuredmobilecomparisionsforwardslider=//*[@id="featuredFight_mobile"]/div[2]/div[3]
+featuredmobilecomparisionsbackwardslider=//*[@id="featuredFight_mobile"]/div[2]/div[2]
+
+#Search Result Page
+srppricetext=(//*[contains(@class,'price_padding')])[1]
+srpbrandtext=(//*[contains(@class,'hover_blue_link')])[1]
+srpspecscore=(//*[@class="rating_box_new_list"])[1]
+srpbrandheader=//*[@id="filter_list"]/ul/li[2]/span
+srpbrandfinder=(//*[@id="filter_list"]/ul/li[2]/span)[2]
+srpbyfeaturetext=//*[@title="4 GB RAM"]
+srpactualcount=//*[contains(@class,'hover_blue_link')]
+srpdisplaycount=//*[@id='finder-records']
+srppricerangetxtbox2=//*[@id="finder_input_2"]
+srppricerangetxtbox1=//*[@id="finder_input_1"]
+srpsortpricebtn=//*[@id="price_box"]
+srp91scores=//*[@id="new-finder-right-content"]/div/div[2]/table[2]/tbody/tr/td[3]/div
+srppopularity=//*[@id="new-finder-right-content"]/div/div[2]/table[2]/tbody/tr/td[4]/div
+srpmore=//*[@id="new-finder-right-content"]/div/div[2]/table[2]/tbody/tr/td[5]/ul/li/div/span[1]
+srpreadmore=//*[@class="compare_content_view"]
+srpreadless=//*[text()=" - Read Less "]
+srpgridview=//*[@data-value="grid"]
+srpgridbrandcount=//*[@id="finderResults"]/span/div[2]/ul/li
+srpgridbrandpagescroll=//*[@id="page_scroll"]
+srpgridviewchk=//*[@id="finderResults"]/span/div[2]/ul/li[2]/div[1]
+srplistview=//*[@data-value="list"]
+srpbattery=(//*[contains(@title,'mAh') ])
+srpupcoming=(//*[@class="expected-price"])[1]
+srpheading=//*[@id="filter_list"]/ul[2]/li[3]/span
+srppricechkbox=//*[@id="priceRangeDiv"]/label[3]/span
+srpclearall=//*[@id="refine_filter"]/a
+srpfeaturedsearches=(//*[@id="mobraminmb409601000000"])[1]
+srpram=//*[contains(@title,'4 GB RAM')]
+srpramfilter=(//*[contains(@title,'GB RAM')])[7]
+srpbrandfilter=(//*[@data-action="Brands"])[1]
+srpmarketstatus=//*[@id="mobmarketstatusfiltermarketstatusfilterupcoming"]
+srpstatustitle=(//*[contains(@title,'Upcoming')])[6]
+srpos=//*[@id="pfosbaseios"]
+srpbrandos=//*[@id="finderResults"]/span/div[4]/div[1]/div[2]/div[1]/div/span/div
+srpRAM=//*[@id="mobraminmb819201000000"]
+srpintmem=//*[@id="mobintmemoryingb12801500"]
+srpbrandintmem=//*[@id="finderResults"]/span/div[4]/div[2]/div[2]/div[4]
+srpbatterycapacity=//*[@id="pfbattery500001000000"]
+srpbrandbattery=//*[contains(@title,'mAh')]
+srpbatteryother=//*[@id="removablebatteryyes"]
+srpbatteryremovable=//*[@id="finderResults"]/span/div[4]/div[1]/div[2]/div[3]/li[4]/div/label[2]
+srpdesign=//*[@id="waterresistantyes"]
+srpfullspecs=(//*[contains(@data-type,"See Full Specs")])[2]
+srpscreensize=//*[@id="pfscreensize6010001"]
+srpbrandscreensize=//*[@id="finderResults"]/span/div[4]/div[1]/div[2]/div[3]/li[2]/div[3]/label[1]
+srppixeldensity=//*[@id="pixeldensity500010000"]
+srpscreenfeatures=//*[@id="pfdisplaytechipslcd"]
+srpbrandscreen=//*[@id="finderResults"]/span/div[4]/div[1]/div[2]/div[3]/li[2]/div[3]/label[3]
+srpscreenresolution=//*[@id="fullhdyes"]
+srpbrandresolution=//*[@id="finderResults"]/span/div[4]/div[1]/div[2]/div[3]/li[2]/div[3]/label[2]
+srpnetwork=//*[@id="pf3gy"]
+srpsimsize=//*[@id="pfsimtypenano"]
+srpprocessorspeed=//*[@id="pfprocessingspeed200001000000"]
+srpsystemchip=//*[@id="socdisplaybrandqualcomm"]
+srpbrandchip=//*[@id="finderResults"]/span/div[4]/div[1]/div[2]/div[3]/li[1]/div[3]/label[2]
+srpprocessorcore=//*[@id="pfdualcoreoctacore"]
+srpbrandcore=//*[@id="finderResults"]/span/div[4]/div[1]/div[2]/div[3]/li[1]/div[3]/label[1]
+srpmaincamera=//*[@id="pfcameraresolution200500"]
+srpbrandcamera=//*[@id="finderResults"]/span/div[4]/div[1]/div[2]/div[3]/li[3]/div[3]/label[1]
+srpfrontcamera=//*[@id="pfseccameraresolution1601500"]
+srpbrandfrontcamera=//*[@id="finderResults"]/span/div[4]/div[1]/div[2]/div[3]/li[3]/div[3]/label[3]
+srpavgrating=//*[@id="avguserratings4550"]
+srpphonefeatures=//*[contains(@onclick,'Phones By Feature') and contains(text(),'Waterproof Mobiles')]
+srpsearchbox=//*[@id="search_filter_finder_input"]
+srpsearchbrand=(//*[@type="checkbox" and  @name="brand[]"])[2]
+srpperformancedropdown=(//*[contains(@class,'downarrow') and(@segment_name="Performance") ])[2]
+srpinnerperformance=(//*[contains(@class,'ratingboxinner') ])[1]
+srpinnerallphonesbtn=(//*[contains(text(),'All Phones') ])[1]
+srpinnerbestperformance=(//*[contains(@onclick,'Performance-meter-best') ])
+srpdisplaydropdown=(//*[contains(@class,'downarrow') and(@segment_name="Display") ])[1]
+srpdisplaybestdisplay=(//*[contains(@class,'ratingboxinner') ])[4]
+srpdisplayinnerallbtn=(//*[contains(text(),'All Phones') ])[1]
+srpbestdisplayphones=(//*[contains(@onclick,'Display-meter-best') ])[1]
+srpcameradropdown=(//*[contains(@class,'downarrow') and(@segment_name="Camera") ])[1]
+srpcameraratingbox=(//*[contains(@class,'ratingboxinner') ])[7]
+srpcameraallbtn=//*[@segment_name="Camera" and @segment_group="All Phones" ]
+srpbestcameraphones=(//*[contains(@onclick,'Camera-meter-best') ])
+srpbatterydropdown=(//*[contains(@class,'downarrow') and(@segment_name='Battery') ])[1]
+srpbatteryratingbox=//*[@id="res_Battery_33297"]/table[4]/tbody/tr/th/span
+srpbatteryallbtn=//*[@segment_name="Battery" and @segment_group="All Phones" ]
+srpbestbatteryphones=(//*[contains(@onclick,'Battery-meter-best') ])[1]
+srpseemoreprice=(//*[@class="price_link"])[2]
+srppricemall=(//*[@class="lazyload_img"])[1]
+srpcomparebtn=(//*[contains(@class,'compare-button')])[2]
+srpaddtofav=//*[contains(@data-action,'add')]
+comparepopupbtn=(//*[contains(@id,'comare-btn')])
+comparepopupclose=(//*[contains(@class,'comp_closeall')])
+comparepopupbrandtxt=//*[contains(@class,'comp_prdct_txt')]
+comparepopupaddbtn=(//*[contains(@class,'addcomp_btn')])[3]
+compareremoveall=(//*[contains(@class,'removall')])
+favpopup=//*[contains(text(),'Sign Up')]
+srpcopylink=//*[@class="share_copylink_icn"]
+srpcopylinktxt=//*[@id="clipBoardUrl"]
+srpmailshare=//*[@class="share_mail_icn"]
+mailsubmitbtn=//*[@class="buy_bttn"]
+srptwittershare=//*[@class="share_twitter_icn"]
+twitterpage=//*[contains(text(),'Tweet')]
+srpfbshare=//*[@class="share_fb_icn"]
+fblogin=//*[contains(@value,'Log In')]
+srppagination=(//*[@class="list-bttnn"])[1]
+srppagination2=(//*[@class="list-bttnn" ])[3]
+
+
+
+# Detail Page
+detailpageprc=(//*[@class="big_prc"])[2]
+detailpagebrandtxt=//*[@itemprop='name']
+detailpagespecscore=(//*[contains(@title,'91score') ])
+detailpagestore=//*[contains(@class,'store_logo')]
+detailpagedisplay=//*[contains(@class,'specs_txt positive_value') and contains(@title,'inches')]
+detailpagecamera=//*[@id="overview"]/div[1]/div[2]/div[5]/div[2]/table/tbody/tr/td[3]/ul/li/label[1]
+detailpagebattery=//*[contains(@class,'specs_txt positive_value') and contains(@title,'mAh')]
+marketstatus=(//*[contains(@class,"label_hd") ])[2]
+detailsspecs=//*[@id="spec_response"]/div[2]/div[3]/table/tbody/tr[6]/td[3]
+detailpixeldensity=//*[@id="spec_response"]/div[2]/div[4]/table/tbody/tr[5]/td[3]
+detailsimsize=//*[@id="spec_response"]/div[2]/div[9]/table/tbody/tr[1]/td[3]
+detailsnetwrk=//*[@id="spec_response"]/div[2]/div[9]/table/tbody/tr[2]/td[3]
+detailprocessorspeed=//*[@id="spec_response"]/div[2]/div[5]/table/tbody/tr[2]/td[3]
+detailpagerating=//*[contains(@class,'ratpt') and contains(@itemprop,'ratingValue')]
+detailspecsselected=//*[@id="#specifications"]
+detailpagememory=//*[@id="spec_response"]/div[2]/div[6]/table/tbody/tr[1]/td[3]
+
+
+#Compare Page
+brand1compare=(//*[@class="device_title"])[1]
+brand1comparestore=//*[@id="store_logo0"]/a/img
+brand1compareprice=(//*[@class="price"])[2]
+brand1comparebuynow=(//*[@class="buy_bttn target_link_external"])[1]
+brand1comparespecscore=(//*[@class="rating_box_new_list"])[1]
+brand1comparedisplay=//*[@id="compare_wrap"]/div/div/div[5]/div[1]/div/table/tbody/tr[1]/td[1]/div/div/p[1]
+brand1comparestorage=//*[@id="compare_wrap"]/div/div/div[5]/div[1]/div/table/tbody/tr[3]/td[1]/div/div/p[1]
+brand1comparecamera=//*[@id="compare_wrap"]/div/div/div[5]/div[1]/div/table/tbody/tr[4]/td[1]/div/div/p[1]
+brand1comparebattery=//*[@id="compare_wrap"]/div/div/div[5]/div[1]/div/table/tbody/tr[5]/td[1]/div/div/p[1]
+brand1compareexpertreview=(//*[contains(@onclick,'expert-review')])[1]
+brand1readalluserreview=(//*[contains(@onclick,'user-review')])[1]
+brand1bestpricebuy=(//*[@class="bst_buybtn"])[1]
+brand2compare=(//*[@class="device_title"])[2]
+brand3compare=(//*[@class="device_title"])[3]
+brand4compare=(//*[@class="device_title"])[4]
+brand1compareprice=(//*[@class="price"])[2]
+brand1headerfreeze=(//*[@class="float_prdct_nme"])[5]
+comparetxt=//*[@class="compare-title"]
+comparebreadcrumb=(//*[text()="Mobiles"])[4]
+comparetxtbox1=//*[@id="searchCompare1"]
+comparetxtboxsuggestion=(//*[@class="ui-menu-item"])[1]
+comparetxtboxsuggestion1=(//*[text()="Realme U1"])[2]
+comparebtn=(//*[contains(@class,'btn-compare') and contains(@type,'button')])[2]
+comparetxtbox2=//*[@id="searchCompare2"]
+comparetxtbox3=//*[@id="searchCompare3"]
+comparetxtbox4=//*[@id="searchCompare4"]
+comparecross3=(//*[@class="cross"])[3]
+comparesuggestedmobile1=(//*[contains(@class,'btn-compare') and contains(@onclick,'compare_home')])[1]
+comparesuggestedmobile2=(//*[contains(@class,'btn-compare') and contains(@onclick,'compare_home')])[2]
+comparesuggestedmobile3=(//*[contains(@class,'btn-compare') and contains(@onclick,'compare_home')])[3]
+comparesuggestedmobile4=(//*[contains(@class,'btn-compare') and contains(@onclick,'compare_home')])[4]
+comparereadmore=//*[@class="compare_content_view"]
+comparereadless=//*[(@class="compare_content_view") and contains(text(),'Read Less')]
+popularmobilecomparisonbtn=(//*[(@type="button") and contains(@class,'btn-compare-orange')])[1]
+popularmobilebrand=(//*[@class="pop-mob-name"])[1]
+general=//*[@id="general"]
+design=//*[@id="design"]
+display=//*[@id="display"]
+performance=//*[@id="performance"]
+storage=//*[@id="storage"]
+camera=//*[@id="camera"]
+battery=//*[@id="battery"]
+network&connectivity=//*[@id="network-connectivity"]
+multimedia=//*[@id="multimedia"]
+specialfeatures=//*[@id="special-features"]
+pricelistbuynow=//*[@id="compare_wrap"]/div/div/div[5]/div[17]/div/table/tbody/tr[1]/td[1]/div[2]/span
+priceliststore=//*[@id="compare_wrap"]/div/div/div[5]/div[17]/div/table/tbody/tr[1]/th/p/img
+jumpto=(//*[contains(text(),"Jump to")])[1]
+jumptogeneral=(//*[contains(@onclick,'general') and contains(@title,'General')])[1]
+jumptodesign=(//*[contains(@onclick,'Design') and contains(@title,'Design')])[2]
+jumptodisplay=(//*[contains(@onclick,'Display') and contains(@title,'Display')])[2]
+jumptoperformance=(//*[contains(@onclick,'Performance') and contains(@title,'Performance')])[2]
+jumptostorage=(//*[contains(@onclick,'Storage') and contains(@title,'Storage')])[2]
+jumptocamera=(//*[contains(@onclick,'Camera') and contains(@title,'Camera')])[5]
+jumptobattery=(//*[contains(@onclick,'battery') and contains(@title,'Battery')])[1]
+jumptonetwork&connectivity=(//*[contains(@onclick,'network-connectivity') and contains(@title,'Network & Connectivity')])[2]
+jumptomultimedia=(//*[contains(@onclick,'multimedia') and contains(@title,'Multimedia')])[2]
+jumptospecialfeatures=(//*[contains(@onclick,'special-features') and contains(@title,'Special Features')])[2]
+summarycollapse=//*[@id="summery"]/i
+generalcollapse=//*[@id="general"]/i
+designcollapse=//*[@id="design"]/i
+displaycollapse=//*[@id="display"]/i
+performancecollapse=//*[@id="performance"]/i
+storagecollapse=//*[@id="storage"]/i
+cameracollapse=//*[@id="camera"]/i
+maincameracollapse=//*[@id="main-camera"]/i
+frontcameracollapse=//*[@id="front-camera"]/i
+batterycollapse=//*[@id="battery"]/i
+networkcollapse=//*[@id="network-connectivity"]/i
+multimediacollapse=//*[@id="multimedia"]/i
+specialfeaturescollapse=//*[@id="special-features"]/i
+pricelistcollapse=//*[@id="price-list"]/i
+viewallquestions=//*[contains(@onclick,'view_all_questions')]
+
+
+
+
+#News Page/stories that matter
+newspagetxt=//*[@class="entry-title"]
+newspage=(//*[contains(@class,'entry-title') ])[1]
+
+#Top deals detail page
+dealsdetailpage=/html/body/div[7]/div[1]/div[1]/div/div[1]/h1
+pricedealsdetailpage=//*[@class="nDeal_prc"]
+offdealsdetailpage=/html/body/div[7]/div[1]/div[1]/div/div[2]/div[2]/table/tbody/tr[1]/td[2]/span[4]
+likedealsdetailpage=((//*[@class="nd_rate"]))[1]
+latestDeals=//*[text()="Latest Deals (All)"]
+mobileDeals=//*[@id="mobile"]/a
+storedealsdetailpage=/html/body/div[7]/div[1]/div[1]/div/div[2]/div[2]/table/tbody/tr[3]/td[2]/a/img
+
+
+#Mega Menu
+mobandtab=(//*[@class="tab_menu"])[1]
+menumobiles=(//*[@class="menu_arw"])[1]
+menuphonefinder=(//*[contains(@title,'Phone Finder') and contains(@onclick,'mega-menu:Mobiles') ])[1]
+breadcrumb=//*[@class="breadcrumb"]
+menutop10mobiles=(//*[contains(@title,'Top 10 Mobiles') and contains(@onclick,'mega-menu:Mobiles') ])[1]
+menubestmobiles=(//*[contains(@title,'Best Mobiles') and contains(@onclick,'mega-menu:Mobiles') ])[1]
+menulatestmobiles=(//*[contains(@title,'Latest Mobiles') and contains(@onclick,'mega-menu:Mobiles') ])[1]
+menuupcomingmobiles=(//*[contains(@title,'Upcoming Mobiles') and contains(@onclick,'mega-menu:Mobiles') ])[1]
+menumobilespricelist=(//*[contains(@title,'Mobile Price List') and contains(@onclick,'mega-menu:Mobiles') ])[1]
+menumobiles=(//*[@class="menu_arw"])[1]
+menubrand=(//*[ contains(@onclick,'mega-menu:Mobiles:Brands') ])[1]
+menumemcard=(//*[ contains(@onclick,'mega-menu:Mobiles:Accessories') ])[1]
+menupowerbank=(//*[ contains(@onclick,'mega-menu:Mobiles:Accessories') ])[2]
+menuheadphones=(//*[ contains(@onclick,'mega-menu:Mobiles:Accessories') ])[3]
+menuallprices=(//*[contains(@title,'Mobile Price List') and contains(@onclick,'mega-menu:Mobiles:Price Range') ])[1]
+menufeature=(//*[contains(@title,'4G VoLTE Phones') and contains(@onclick,'mega-menu:Mobiles:Feature') ])[1]
+menutablet=(//*[contains(@title,'Tablet') and contains(@onclick,'mega-menu:Tablets') ])[1]
+tabletpage=(//*[@class="cat_titl"])[1]
+menutabletfinder=(//*[contains(@title,'Tablet Finder') and contains(@onclick,'mega-menu:Tablets') ])[1]
+menutop10tablets=(//*[contains(@title,'Top 10 Tablets') and contains(@onclick,'mega-menu:Tablets') ])[1]
+menubesttablets=(//*[contains(@title,'Best Tablets') and contains(@onclick,'mega-menu:Tablets') ])[1]
+menutabletpricelist=(//*[contains(@title,'Tablet Price list') and contains(@onclick,'mega-menu:Tablets') ])[1]
+menutabletpriceunder=(//*[contains(@title,'Tablets under 5000') and contains(@onclick,'mega-menu:Tablets') ])[1]
+top10tab=(//*[@class="tab_menu"])[2]
+top10mobiles=(//*[@class="target_link" and contains(@title,'Top 10 Mobiles')])[1]
+top10tablet=(//*[@class="target_link" and contains(@title,'Top 10 Tablets')])[1]
+top10laptops=(//*[@class="target_link" and contains(@title,'Top 10 Laptops')])[1]
+top10tvs=(//*[contains(@onclick,'Top 10 TVs') and contains(@title,'Top 10 TVs')])[1]
+top10cameras=(//*[contains(@title,'Top 10 Cameras') and contains(@onclick,'Top 10') ])[1]
+top10acs=(//*[contains(@title,'Top 10 ACs') and contains(@onclick,'Top 10') ])[1]
+top10bestphonesunder5000=(//*[contains(@title,'Best Phones Under 5,000') and contains(@onclick,'Top 10') ])[1]
+top10bybrand=(//*[contains(@onclick,'Top 10:Top Mobiles by Brand') and contains(@title,'Top 10 ')])[1]
+top10byfeatures=(//*[contains(@onclick,'Top 10:Top Mobiles by Features') and contains(@title,'4G')])[1]
+menucompare=(//*[@class="tab_menu"])[3]
+menucomparemobiles=(//*[contains(@title,'Compare Mobiles') and contains(@onclick,'Compare') ])[1]
+menucomparetablets=(//*[contains(@title,'Compare Tablets') and contains(@onclick,'Compare Tablets') ])[1]
+menucomparelaptops=(//*[contains(@title,'Compare Laptops') and contains(@onclick,'Compare') ])[1]
+menucomparetvs=(//*[contains(@title,'Compare TVs') and contains(@onclick,'Compare') ])[1]
+menutopmobcompare=(//*[@class="vstxt"])[1]
+menuupcoming=(//*[@title="Upcoming Mobiles"])[2]
+menubest=//*[@id="expert_head_pick"]
+menubestphoneunder5000=(//*[@class="target_link" and contains(@title,'Best Phones Under Rs. 5,000')])[1]
+menugreatcameraphones=(//*[@class="target_link" and contains(@title,'Great Camera Phones')])[1]
+menubestperformancephones=(//*[@class="target_link" and contains(@title,'Best Performance Phones')])[1]
+menunewsandreviews=(//*[contains(@onclick,'News & Reviews')])[1]
+menugadgetreviews=(//*[@class="target_link_external" and contains(@title,'Gadget Reviews')])[1]
+menulaptoptab=(//*[@class="tab_menu"])[5]
+menulaptob=(//*[contains(@title,'Laptops') and contains(@onclick,'mega-menu:Laptops') ])[1]
+menulaptopfinder=(//*[contains(@title,'Laptop Finder') and contains(@onclick,'mega-menu:Laptops') ])[1]
+menutop10laptop=(//*[contains(@title,'Top 10 Laptops') and contains(@onclick,'mega-menu:Laptops') ])[1]
+menubestlaptop=(//*[contains(@title,'Best Laptops') and contains(@onclick,'mega-menu:Laptops') ])[1]
+menulaptopunder25000=(//*[contains(@title,'Under Rs. 25,000') and contains(@onclick,'mega-menu:Laptops') ])[1]
+menui7laptop=(//*[contains(@title,'i7 Laptops') and contains(@onclick,'mega-menu:Laptops') ])[1]
+menucomputerperipherals=(//*[contains(@title,'Printers') and contains(@onclick,'mega-menu:Computer Peripherals') ])[1]
+menumobilerecharge=(//*[contains(@title,'Mobile Recharge') and contains(@onclick,'mobile-recharge') ])[1]
+menumoretab=(//*[@class="tab_menu"])[6]
+menumoredeals=(//*[contains(@title,'Deals') and contains(@onclick,'mega-menu:deals') ])[1]
+menumoreQ&A=(//*[contains(@title,'Q&A') and contains(@onclick,'mega-menu:questions') ])[1]
+menumorebestapps=(//*[contains(@title,'Best Apps') and contains(@onclick,'mega-menu:questions') ])[1]
+menumorehometheaters=(//*[contains(@title,'Home Theaters') and contains(@onclick,'mega-menu:Cameras AV') ])[1]
+menumoresmartwatches=(//*[contains(@title,'Smartwatches') and contains(@onclick,'mega-menu:Wearables') ])[1]
+menumorerefrigerators=(//*[contains(@title,'Refrigerators') and contains(@onclick,'mega-menu:HOME APPLIANCES') ])[1]
+goquicklymobiles=(//*[contains(@title,'Mobiles') and contains(@onclick,'menu: Go Quickly To') ])[1]
+goquicklylaptops=(//*[contains(@title,'Laptops') and contains(@onclick,'menu: Go Quickly To') ])[1]
+goquicklytablets=(//*[contains(@title,'Tablets') and contains(@onclick,'menu: Go Quickly To') ])[1]
+goquicklycameras=(//*[contains(@title,'Cameras') and contains(@onclick,'menu: Go Quickly To') ])[1]
+goquicklytelevision=(//*[contains(@title,'Television') and contains(@onclick,'menu: Go Quickly To') ])[1]
+goquicklyhometheaters=(//*[contains(@title,'Home Theaters') and contains(@onclick,'menu: Go Quickly To') ])[1]
+goquicklypowerbanks=(//*[contains(@title,'Power Banks') and contains(@onclick,'menu: Go Quickly To') ])[1]
+goquicklysmartwatches=(//*[contains(@title,'Smart Watches') and contains(@onclick,'menu: Go Quickly To') ])[1]
+goquicklywashingmachines=(//*[contains(@title,'Washing Machines') and contains(@onclick,'menu: Go Quickly To') ])[1]
+goquicklyairconditioners=(//*[contains(@title,'Air Conditioners') and contains(@onclick,'menu: Go Quickly To') ])[1]
+
+#Best Apps Page
+bestappheading=/html/body/div[4]/div/div[1]/div/div[3]/h1/span
+
+#Store Page
+Storepagebrand=//*[@id="productTitle"]

@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 19.078 sec <<< FAILURE! - in TestSuite
+endScript(API.AMP.AMP_Validation)  Time elapsed: 18.028 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/automationtesting/excelreport/Xl
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at API.AMP.AMP_Validation.endScript(AMP_Validation.java:171)
+

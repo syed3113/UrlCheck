@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Xlfile_Reader.java&apos; to &apos;Lotame-Url/src/test/java/Lotame.laptop_url&apos;&#x0A;- Original project: &apos;91mobiles_AMP&apos;&#x0A;- Destination element: &apos;Lotame-Url/src/test/java/Lotame.laptop_url&apos;&#x0A;- Original element: &apos;AMP.mobiles.Xlfile_Reader.java&apos;" description="Copy compilation unit" destination="=Lotame-Url/src\/test\/java&lt;Lotame.laptop_url" element1="/src\/test\/java&lt;AMP.mobiles{Xlfile_Reader.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1575530710187" units="1" version="1.0"/>
+</session>

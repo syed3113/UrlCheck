@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="12488" started-at="2019-02-26T07:49:04Z" finished-at="2019-02-26T07:49:17Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="12488" started-at="2019-02-26T07:49:04Z" finished-at="2019-02-26T07:49:17Z">
+      <class name="AMP.mobiles.AMP_Validation">
+        <test-method status="PASS" signature="Verify()[pri:0, instance:AMP.mobiles.AMP_Validation@29774679]" name="Verify" duration-ms="12460" started-at="2019-02-26T13:19:04Z" finished-at="2019-02-26T13:19:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify -->
+        <test-method status="PASS" signature="endScript()[pri:0, instance:AMP.mobiles.AMP_Validation@29774679]" name="endScript" is-config="true" duration-ms="296" started-at="2019-02-26T13:19:17Z" finished-at="2019-02-26T13:19:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endScript -->
+      </class> <!-- AMP.mobiles.AMP_Validation -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

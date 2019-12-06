@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <test name="TestOne(failed)">
+    <classes>
+      <class name="API.AMP.AMP_Validation">
+        <methods>
+          <include name="endScript"/>
+          <include name="Verify"/>
+        </methods>
+      </class> <!-- API.AMP.AMP_Validation -->
+    </classes>
+  </test> <!-- TestOne(failed) -->
+</suite> <!-- Failed suite [Suite] -->

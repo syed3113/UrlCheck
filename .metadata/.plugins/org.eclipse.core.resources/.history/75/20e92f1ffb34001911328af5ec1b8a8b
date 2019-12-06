@@ -1,0 +1,29 @@
+package API.AMP;
+
+import static com.jayway.restassured.RestAssured.*;
+
+import com.jayway.restassured.RestAssured;
+import com.jayway.restassured.http.ContentType;
+import com.jayway.restassured.response.Response;
+
+public class AMP_Validation {
+	
+	public static void main(String[] args) {
+		
+		
+		RestAssured.baseURI ="https://amp.cloudflare.com/q/www.91mobiles.com";
+		Response res=
+		 given()
+		 .contentType(ContentType.JSON)
+		 .when()
+		 .get("/razer-phone-2-price-in-india-amp");
+		 
+		String text = res.asString();
+		 System.out.println("Data:-" +text);
+		
+		String validate = res.jsonPath().get("[0].valid");
+		System.out.println(validate);
+		
+	}
+
+}

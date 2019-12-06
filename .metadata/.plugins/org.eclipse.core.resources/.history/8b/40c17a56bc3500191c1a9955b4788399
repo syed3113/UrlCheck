@@ -1,0 +1,61 @@
+package API.AMP;
+
+import static com.jayway.restassured.RestAssured.*;
+
+import org.automationtesting.excelreport.Xl;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.Test;
+
+import com.jayway.restassured.RestAssured;
+import com.jayway.restassured.http.ContentType;
+import com.jayway.restassured.response.Response;
+
+public class AMP_Validation {
+	
+	@Test
+	public static void Verify() throws Exception {
+		
+	    for(int i=1;i<=2;i++) {
+	    	
+		Xlfile_Reader xl= new Xlfile_Reader();
+		Xlfile_Reader.setExcelFile("/home/ahtisham/Automation/AMP/src/test/java/API/AMP/AMP.xls", "Sheet1");
+		RestAssured.baseURI ="https://amp.cloudflare.com/q";
+		Response res=
+		 given()
+		 .contentType(ContentType.JSON)
+		 .when()
+		// .get("/www.91mobiles.com/best-mobiles-in-india-amp");
+		 .get(xl.getCellData(i,0));
+		
+		System.out.println("Excel Data:-" +xl.getCellData(i, 0));
+		 
+		String text = res.asString();
+		 System.out.println("Data:-" +text);
+		
+		Boolean validate = res.jsonPath().get("valid");
+		System.out.println(validate);
+		
+		if(validate.equals(false))
+		{
+			System.out.println("Result Fail");
+			xl.setCellData("Fail",i,1);
+			
+			
+		}
+		else
+		{
+			System.out.println("Result Pass");
+			xl.setCellData("Pass",i,1);
+		}
+	    	
+	}
+	}
+	
+	@AfterSuite
+	
+	public static void endScript() throws Exception
+	{
+		Xl.generateReport("excel-report.xlsx");
+	}
+	
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="" key="selection"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="junit"/>
+			<item value="surefire"/>
+			<item value="pass"/>
+			<item value="refresh"/>
+			<item value="/home/ahtisham/Automation/AMP_Beta/src/AMP/AMP.xls"/>
+			<item value="driver.quit"/>
+			<item value="Get Text from price drop alert pop up"/>
+			<item value="verifyText"/>
+			<item value="Image IP0:-"/>
+			<item value="Error came"/>
+			<item value="Error"/>
+			<item value="fail"/>
+			<item value="expected"/>
+			<item value="Asser"/>
+			<item value="isDis"/>
+		</list>
+		<list key="replacehistory">
+			<item value="sb.append"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="342" key="DIALOG_WIDTH"/>
+		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+		<item value="434" key="DIALOG_HEIGHT"/>
+		<item value="869" key="DIALOG_X_ORIGIN"/>
+		<item value="305" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

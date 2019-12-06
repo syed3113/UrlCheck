@@ -1,0 +1,36 @@
+package API.AMP;
+
+import static com.jayway.restassured.RestAssured.*;
+
+import com.jayway.restassured.RestAssured;
+import com.jayway.restassured.http.ContentType;
+import com.jayway.restassured.response.Response;
+
+public class AMP_Validation {
+	
+	public static void main(String[] args) throws Exception {
+		
+		Xlfile_Reader xl= new Xlfile_Reader();
+		RestAssured.baseURI ="https://amp.cloudflare.com/q";
+		Response res=
+		 given()
+		 .contentType(ContentType.JSON)
+		 .when()
+		// .get("/www.91mobiles.com/best-mobiles-in-india-amp");
+		 .get(xl.getCellData(1,0));
+		
+		System.out.println("Excel Data:-" +xl.getCellData(1, 0));
+		 
+		String text = res.asString();
+		 System.out.println("Data:-" +text);
+		
+		Boolean validate = res.jsonPath().get("valid");
+		System.out.println(validate);
+		
+		if(validate.equals(false))
+		{
+			System.out.println("Result Fail");
+		}
+	}
+
+}
