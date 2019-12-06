@@ -71,8 +71,8 @@ public class HitUrlTest {
 			Duration timeElapsed = Duration.between(start, end);
 			System.out.println("Time taken: " + (timeElapsed.toMillis()) / 1000 + " seconds");
 			Xlfile_Reader.setCellData1((timeElapsed.toMillis()) / 1000, i, 2);
-			driver.close();
+			
 		}
-
+                        driver.close();
 	}
 }
