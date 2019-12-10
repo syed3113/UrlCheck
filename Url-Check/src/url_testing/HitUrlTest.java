@@ -18,7 +18,7 @@ public class HitUrlTest {
 	@Test
 	public void hitUrlTest() throws Exception {
 		Xlfile_Reader.setExcelFile("../Url-Check/src/url_testing/Lotame_laptop_pages.xls", "Sheet1");
-		for (int i = 102; i <=178; i++) {
+		for (int i = 155; i <=178; i++) {
 			//System.out.println(Xlfile_Reader.getRowCount("Sheet1"));
 			String url = Xlfile_Reader.getCellData(i, 0);
 			System.out.println("Url:-" + url);
